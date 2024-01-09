@@ -1,0 +1,64 @@
+* {
+    background-color: #000;
+    color: white;
+    box-sizing: border-box;
+}
+
+.home-container {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    margin: 30px;
+    padding: 30px;
+    /* text-align: center; */
+}
+
+.society-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* margin-right: 20px; */
+    margin: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+h2.organization-name {
+    margin: 37px;
+    font-size: 2.5rem;
+    /* display: inline-block; Keep the text on the same line as the logo */
+    margin-left: -10px;
+    top: 60px;
+}
+
+.animated-text {
+    margin: 120px;
+    font-size: 4rem;
+}
+
+.home-button {
+    left: 100px;
+    background-color: transparent;
+    color: white;
+    padding: 13px 19px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.home-button:before {
+    content: ""; /* Create an empty pseudo-element for the arrow */
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+    right: 6px; /* Adjust the positioning of the arrow */
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg); /* Rotate the arrow */
+}
+
+.home-button:hover {
+    background-color: rgba(52, 152, 219, 0.5); /* Add some transparency to the background on hover */
+}
