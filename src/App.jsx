@@ -8,9 +8,13 @@ function App() {
   return (
     <div>
       <Home />
-      {/* <Achievements />
-      <UpcomingEvents />
-      <Footer /> */}
+      {/* <Achievements /> */}
+      <UpcomingEvents
+        url={"https://picsum.photos/v2/list"}
+        page={"1"}
+        limit={"10"}
+      />
+      {/* <Footer /> */}
     </div>
   );
 }
