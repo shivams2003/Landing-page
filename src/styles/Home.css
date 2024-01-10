@@ -5,35 +5,15 @@
 }
 
 .home-container {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    margin: 30px;
     padding: 30px;
-    /* text-align: center; */
-}
-
-.society-logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    /* margin-right: 20px; */
-    margin: 10px;
-    position: absolute;
-    top: 15px;
-}
-
-h2.organization-name {
-    margin: 37px;
-    font-size: 2.5rem;
-    /* display: inline-block; Keep the text on the same line as the logo */
-    margin-left: -10px;
-    top: 60px;
+    display: grid;
+    grid-template-rows: 35vh 45vh 100vh auto;
+    gap: 2rem;
 }
 
 .animated-text {
-    margin: 120px;
-    font-size: 4rem;
+    font-size: 6rem;
+    overflow-wrap: normal;
 }
 
 .home-button {
@@ -61,4 +41,8 @@ h2.organization-name {
 
 .home-button:hover {
     background-color: rgba(52, 152, 219, 0.5); /* Add some transparency to the background on hover */
+}
+
+.empty {
+    background-color: azure;
 }

@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
-import "./Home.css";
-import { Link } from 'react-router-dom';
+import "./styles/Home.css";
+import UpcomingEvents from './UpcomingEvents';
+import HorizontalScroller from './components/HorizaontalScroller';
 function Home() {
   const [showText, setShowText] = useState('');
 
@@ -23,16 +24,18 @@ function Home() {
   }, []);
   return (
     <div className='home-container'>
-      <img className = "society-logo" src="src\assets\eces.jpg" alt=""/>
-      <h2 className='organization-name'>ECES</h2>
       <div className="animated-text">
         {showText}
       </div>
-      {/* <Link to="/"> */}
-        <button className="home-button">Go to Home </button>
-      {/* </Link> */}
-      {/* <p>Here to make your college life easier</p> */}
+      <UpcomingEvents
+        url={"https://picsum.photos/v2/list"}
+        page={"1"}
+        limit={"10"}
+      />
+      <HorizontalScroller />
+      <div className="empty"></div>
     </div>
+    
   )
 }
 

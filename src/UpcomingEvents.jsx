@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
-import "./UpcomingEvents.css";
+import "./styles/UpcomingEvents.css";
 
 export default function UpcomingEvents({ url, limit = 5, page = 1 }) {
   const [images, setImages] = useState([]);

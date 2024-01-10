@@ -1,20 +1,14 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
 import Home from "./Home";
-import Achievements from "./Achievements";
-import UpcomingEvents from "./UpcomingEvents";
-import Footer from "./Footer";
 function App() {
   return (
-    <div>
+    <div className="app-container">
+      <div className="navbar-container">
+          <img className = "society-logo" src="src\assets\eces.jpg" alt=""/>
+          <h2 className='organization-name'>ECES</h2>
+      </div>
       <Home />
-      {/* <Achievements /> */}
-      <UpcomingEvents
-        url={"https://picsum.photos/v2/list"}
-        page={"1"}
-        limit={"10"}
-      />
-      {/* <Footer /> */}
     </div>
   );
 }

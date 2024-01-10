@@ -1,0 +1,28 @@
+.app-container {
+    margin: 0;
+    font-size: 16px;
+    display: grid;
+    grid-template-rows: 10vh auto;
+    gap: 3rem;
+    max-width: 100vh;
+}
+
+.navbar-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.society-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px;
+    top: 15px;
+}
+
+h2.organization-name {
+    margin: 37px;
+    font-size: 2.5rem;
+    margin-left: -10px;
+    top: 60px;
+}
