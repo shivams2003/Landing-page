@@ -1,0 +1,9 @@
+.customLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Add this if necessary */
+  height: 100vh;
+}
+#image1 {
+  display: none;
+}
